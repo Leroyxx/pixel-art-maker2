@@ -1,0 +1,485 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'VT323', monospace;
+    font-size: 72px;
+    margin: 0.2em;
+}
+
+h2 {
+    font-family: 'VT323', monospace;
+    font-size: 34px;
+    margin: 1em 0 0.25em;
+    margin-top: 0.5em;
+    text-align: center
+}
+
+
+
+.align,
+.flexalign {
+  display: flex; justify-content: center;
+}
+
+.rightflex {
+  padding-left: 7px;
+}
+
+.icons {
+  /*165px is your Menu width with borders*/
+  max-width: calc(100% - 21px);
+  /*For cross browser*/
+  -webkit-max-width: calc(100% - 21px);
+  -moz-max-width: calc(100% - 21px);
+  -o-max-width: calc(100% - 21px);
+  -ms-max-width: calc(100% - 21px);
+  display: inline-block;
+  vertical-align: top;
+}
+
+.tooltip
+{
+  position: absolute;
+      background-color: rgba(235, 235, 235, 0.89);
+      font-size: 14px;
+      color: #000000f2;
+      padding: 6px;
+      border-radius: 4px;
+      width: 300px;
+      -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      z-index: 999 !important;
+}
+
+#huh {
+  cursor: help;
+  color:lightgrey;
+}
+
+.middle {
+  padding-left: 80px;
+  padding-right: 90px;
+  text-align: center;
+}
+
+.pixel_canvas {
+  margin-top:30px;
+  display:inline-block;
+}
+
+.saveOpened {
+  position: fixed;
+  right: 4%;
+  transform: translateX(-4%);
+  top: 80%;
+  transform: translateY(-80%);
+}
+
+.left {
+  position: fixed;
+  left: 9%;
+  top: 35%;
+}
+
+.right {
+  position: fixed;
+  right: 4%;
+  bottom: 40%;
+}
+
+.error {
+  font-family: 'VT323', monospace;
+  font-size:26px;
+  color: white;
+}
+
+.right {
+  text-align: right;
+}
+
+
+h3 {
+  font-family: 'VT323', monospace;
+  font-size: 24px;
+  margin: 1em 0 0.25em;
+  margin-top: 0.5em;
+}
+
+.smallerH3 {
+  font-size: 18px;
+}
+
+#cantTouchThis {
+  font-family: 'Barlow Semi Condensed',sans-serif;
+}
+
+input[type=color] {
+  outline: none !important;
+	width: 21px;
+	height: 21px;
+  border: 1px solid white;
+  -webkit-align-content: center;
+  cursor: pointer;
+}
+
+.vertigo {
+  font-size: 20px;
+  font-style: bold;
+  padding-left: 4px;
+  padding-right:4px;
+}
+
+input:invalid {
+  text-shadow: 1px 1px white;
+  box-shadow: inset -3px 6px 0px 9px orange;
+}
+
+.text {
+    font-family: 'Barlow Semi Condensed',sans-serif;
+    font-size: 15px;
+}
+
+.credit {
+  font-family: 'VT323', monospace;
+  font-size: 15px;
+}
+
+.text2 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 18px;
+}
+
+#containerSaveBox {
+  position: fixed;
+  bottom: 40%;
+  right: 40%;
+  background-color: white;
+  border-color: grey;
+  border-width: 1px;
+  border-style:solid;
+}
+
+#iStayHere {
+  text-align:right;
+}
+
+.featureDescription {
+    font-size: 15px;
+}
+
+ol {
+    text-align: center;
+    list-style-position:inside;
+}
+
+.redAndWrong {
+  text-shadow: 1px 1px white;
+  box-shadow: inset -3px 6px 0px 9px rgba(255,0,77,1);
+}
+
+.errorMessage {
+
+  padding: 17px;
+  text-align: center;
+  color: #330f08;
+  border-width: 1px;
+  border-radius: 4px;
+  border-color: white;
+  background-color: rgba(255,0,77,1);\
+  position: absolute;
+  bottom: 60%;
+  right: 35%
+
+}
+
+table,
+tr,
+td {
+    -webkit-touch-callout: none; /*disable selection of grid*/
+  -webkit-user-select: none; /*disable selection of grid*/
+   -khtml-user-select: none; /*disable selection of grid*/
+     -moz-user-select: none; /*disable selection of grid*/
+      -ms-user-select: none; /*disable selection of grid*/
+          user-select: none; /*disable selection of grid*/
+
+}
+
+#submit_button {
+  outline: none !important;
+  position: relative;
+  top: 1px;
+  width: 6em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  background-color: white;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  cursor: pointer;
+}
+
+#loadCodeButton {
+  outline: none !important;
+  position: relative;
+  top: 1px;
+  width: 13em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  background-color: white;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  cursor: pointer;
+}
+
+.addButton {
+    outline: none !important;
+    position: relative;
+    top: 1px;
+    width: 4.9em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+    background-color: white;
+    color: grey;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    cursor: pointer;
+}
+
+#fixedLeft {
+  position: fixed;
+  bottom: 60%;
+  left: 2%;
+}
+
+.spacedUp {
+  padding-top: 10px;
+  padding-bottom:0px;
+}
+
+.short {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+.shorter {
+  margin: 0;
+	padding-top: 1px;
+  padding-bottom: 14px;
+	border: 0;
+	vertical-align: baseline;
+}
+.shorterer {
+  margin: 0;
+	padding: 7px;
+	border: 0;
+}
+
+#plus, #minus {
+  height: 2.1em;
+  width: 3em;
+}
+
+
+.blackButton {
+    outline: none !important;
+    position: relative;
+    top: 1px;
+    width: 3.5em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    cursor: pointer;
+}
+
+#closeSaveBox {
+    position: relative;
+    top: 1px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    background-color: red;
+    color: white;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    cursor: pointer;
+}
+
+.wrapper {
+  background: white;
+  overflow: hidden;
+  height: 0;
+  transition: height 200ms;
+}
+
+.minimaxi {
+    background: none !important;
+    color: black;
+    border: none;
+    padding: 0! important;
+    font: inherit;
+    font-family: 'Barlow Semi Condensed Medium', sans-serif;
+    transform: translateY(-16%);
+    cursor: pointer;
+    outline: none !important;
+}
+
+.loadTemplates {
+  position: relative;
+  top: 1px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  font-family: 'VT323', monospace;
+  cursor: pointer;
+}
+
+.biggerBlackButton {
+    outline: none !important;
+    position: relative;
+    height: 7.4em;
+    width: 9em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    background-color: white;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    cursor: pointer;
+}
+
+.wideaddButton {
+  outline: none !important;
+  position: relative;
+  top: 1px;
+  width: 8.5em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+  background-color: white;
+  color: grey;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  cursor: pointer;
+}
+
+.submit_line {line-height: 180%;
+}
+
+.minicell {
+  border-style: solid;
+  border-width: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+
+
+tr {
+}
+
+.color {
+  width: 19px;
+  height: 19px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
+
+label {
+  font-size:15px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  vertical-align: top;
+}
+
+#Palette {
+  display:inline-block;
+}
+
+.paddingUp {
+  padding-top: 9px
+}
+
+.biggerSign {
+  font-size: 13.5px;
+}
+
+small {
+  color: lightgrey;
+}
+
+.drawable {
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#messages {
+  margin-bottom: 0px;
+  position: fixed;
+  bottom: 60%;
+  right: 38%
+}
+
+input[type=number] {
+    outline: none !important;
+    width: 6em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    background-color: white;
+    font-size: 15px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+
+input[type=checkbox] {
+  outline: none !important;
+  cursor: pointer;
+}
+
+
+.color2 {
+  background-color: #808080;
+}
+.color3 {
+  background-color: #D3D3D3;
+}
+.color4 {
+  background-color: #F5F5DC;
+}
+.color5 {
+  background-color: #F5FFFA;
+}
+.color6 {
+  background-color:#F5F5F5;
+}
+.color7 {
+  background-color:#778899;
+}
